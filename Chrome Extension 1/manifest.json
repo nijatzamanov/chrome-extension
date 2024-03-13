@@ -8,8 +8,9 @@
     },
     "content_scripts": [
         {
+            "matches": ["*://www.google/*", "*://www.youtube.com/"],
             "js": ["index.js"]
         }
-    ]
+    ],
     "manifest_version": 2
 }
