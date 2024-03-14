@@ -19,6 +19,6 @@ for (let i = 0; i < links.length; i++) {
 chrome.runtime.sendMessage({
     "action": "print_messages",
     "data": formatted_links
-}, function(res) {
+}, res => {
     console.log(res);
 })
