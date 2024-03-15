@@ -16,12 +16,6 @@ function MyImageCLick (info, tab) {
     })
 }
 
-chrome.contextMenus.create({
-    "title": "Share",
-    "contexts": ["page"],
-    "onclick": MyGenericClick 
-})
-
 chrome.contextMenus.create ({
     "title": "Share",
     "contexts": ["page"],
