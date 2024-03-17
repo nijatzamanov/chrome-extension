@@ -8,14 +8,6 @@ function MyGenericClick(info, tab) {
     })
 }
 
-function MyImageCLick (info, tab) {
-    console.log("Clicked an image", info, tab);
-    chrome.windows.create({
-        "url": "https://www.facebook.com/sharer.php?u=" + info.srcUrl + "&display=popup",
-        "type": "popup"
-    })
-}
-
 chrome.contextMenus.create ({
     "title": "Share",
     "contexts": ["page"],
