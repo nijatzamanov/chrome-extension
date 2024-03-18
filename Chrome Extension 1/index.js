@@ -8,7 +8,7 @@ for (let i = 0; i < links.length; i++) {
     let title = links[i].text;
     let href = links[i].href;
 
-    if (title!== "" && href !== "") {
+    if (title !== "" && href !== "") {
         formatted_links.push({
             title: title,
             href: href

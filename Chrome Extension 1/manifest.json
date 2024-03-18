@@ -2,7 +2,7 @@
     "name": "My First Extension",
     "description": "Shows a menu item",
     "version": "0.3",
-    "permissions": ["contextMenus", "activeTab"],
+    "permissions": ["contextMenus", "activeTab", "downloads"],
     "icons": {
         "16": "./images/share_16.png",
         "32": "./images/share_32.png",
@@ -14,7 +14,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["*://www.google/*", "*://www.youtube.com/"],
+            "matches": ["*://www.google.com/*", "*://www.youtube.com/*"],
             "js": ["index.js"]
         }
     ],

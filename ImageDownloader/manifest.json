@@ -1,0 +1,14 @@
+{
+    "name": "Bulk Image Downloader",
+    "description": "Download every image ona a web page",
+    "version": "0.1",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [{
+        "matches": ["*://www.google.com/*"],
+        "js": ["content.js"]
+    }],
+    "manifest_version": 2
+    
+}

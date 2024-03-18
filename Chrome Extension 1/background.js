@@ -1,18 +1,22 @@
 
-function MyGenericClick(info, tab) {
+function MyImageClick(info, tab) {
     console.log("Clicked an image:", info, tab);
-    chrome.windows.create({
+    /* chrome.windows.create({
         "url": "https://www.facebook.com/sharer.php?u=" + info.srcUrl + "&display=popup",
         "type": "popup"
+    }) */
+    chrome.downloads.download({
+        "url": info.srcUrl
     })
 }
 
 function MyQuoteClick(info, tab) {
     console.log("Clicked on page:", info, tab);
-    chrome.windows.create({
+    /* chrome.windows.create({
         "url": "https://www.facebook.com/sharer.php?u=" + info.pageUrl + "&display=popup&quote=" + info.selectionText,
         "type": "popup"
-    })
+    }) */
+    chrome.downloads.download(info.srcUrl)
 }
 
 chrome.contextMenus.create ({
