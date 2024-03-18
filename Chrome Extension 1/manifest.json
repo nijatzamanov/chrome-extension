@@ -1,5 +1,5 @@
 {
-    "name": "My First Extension",
+    "name": "MY First Extension",
     "description": "Shows a menu item",
     "version": "0.3",
     "permissions": ["contextMenus", "activeTab", "downloads"],
@@ -18,5 +18,5 @@
             "js": ["index.js"]
         }
     ],
-    "manifest_version": 3
+    "manifest_version": 2
 }
