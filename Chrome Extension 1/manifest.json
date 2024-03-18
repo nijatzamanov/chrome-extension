@@ -3,6 +3,12 @@
     "description": "Shows a menu item",
     "version": "0.3",
     "permissions": ["contextMenus", "activeTab"],
+    "icons": {
+        "16": "./images/share_16.png",
+        "32": "./images/share_32.png",
+        "64": "./images/share_64.png",
+        "128": "./images/share_128.png"
+    },
     "background": {
         "scripts": ["background.js"]
     },
