@@ -1,17 +1,17 @@
 {
     "name": "Bulk Image Downloader",
     "description": "Download every image ona a web page",
-    "version": "1.0.1",
-    "action": {
+    "version": "0.1",
+    "permissions": ["<all_urls>", "tabs", "activeTab", "downloads"],
+    "browser_action": {
         "default_popup": "./popup/index.html"
     },
     "background": {
-        "service_worker": "background.js"
+        "scripts": ["jquery-3.7.1.min.js", "background.js"]
     },
     "content_scripts": [{
-        "matches": ["*://www.google.com/*"],
-        "js": ["content.js"]
+        "matches": ["<all_urls>"],
+        "js": ["jquery-3.7.1.min.js", "content.js"]
     }],
-    "manifest_version": 3,
-    "content_security_policy": {}
+    "manifest_version": 2
 }
